@@ -5,6 +5,7 @@
     <classes>
       <class name="com.qa.test.EnrollmentPageTest">
         <methods>
+          <include name="tearDown"/>
           <include name="findMember"/>
           <include name="setUp"/>
         </methods>

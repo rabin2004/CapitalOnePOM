@@ -2,27 +2,49 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24167" started-at="2020-01-08T20:51:36Z" finished-at="2020-01-08T20:52:00Z">
+  <suite name="Default suite" duration-ms="22647" started-at="2020-01-31T15:49:36Z" finished-at="2020-01-31T15:49:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24167" started-at="2020-01-08T20:51:36Z" finished-at="2020-01-08T20:52:00Z">
+    <test name="Default test" duration-ms="22647" started-at="2020-01-31T15:49:36Z" finished-at="2020-01-31T15:49:59Z">
       <class name="com.qa.test.EnrollmentPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.EnrollmentPageTest@146ba0ac]" name="setUp" is-config="true" duration-ms="17251" started-at="2020-01-08T20:51:36Z" finished-at="2020-01-08T20:51:53Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.EnrollmentPageTest@4dfa3a9d]" name="setUp" is-config="true" duration-ms="16374" started-at="2020-01-31T15:49:36Z" finished-at="2020-01-31T15:49:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="findMember()[pri:0, instance:com.qa.test.EnrollmentPageTest@146ba0ac]" name="findMember" duration-ms="6806" started-at="2020-01-08T20:51:53Z" finished-at="2020-01-08T20:52:00Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="findMember()[pri:0, instance:com.qa.test.EnrollmentPageTest@4dfa3a9d]" name="findMember" duration-ms="5419" started-at="2020-01-31T15:49:53Z" finished-at="2020-01-31T15:49:58Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'USER', ip: '192.168.5.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64638}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0b6a5990fd61b78aa7c347c2bf796abb]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at com.qa.test.EnrollmentPageTest.findMember(EnrollmentPageTest.java:40)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'USER', ip: '192.168.5.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64638}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0b6a5990fd61b78aa7c347c2bf796abb
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+at com.qa.test.EnrollmentPageTest.findMember(EnrollmentPageTest.java:39)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,10 +72,14 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findMember -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.EnrollmentPageTest@4dfa3a9d]" name="tearDown" is-config="true" duration-ms="807" started-at="2020-01-31T15:49:58Z" finished-at="2020-01-31T15:49:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.qa.test.EnrollmentPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
