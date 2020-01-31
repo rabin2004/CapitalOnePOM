@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.test.SupportCenterTest">
+      <class name="com.qa.test.EnrollmentPageTest">
         <methods>
-          <include name="checkActivateDebitCardLink"/>
+          <include name="findMember"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.qa.test.SupportCenterTest -->
+      </class> <!-- com.qa.test.EnrollmentPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

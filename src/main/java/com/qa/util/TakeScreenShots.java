@@ -10,7 +10,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class TakeScreenShots {
+import com.qa.base.TestBase;
+
+public class TakeScreenShots extends TestBase {
 
 	public static void main(String[] args) throws IOException {
 		System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
@@ -18,10 +20,10 @@ public class TakeScreenShots {
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(TestUtil.page_load_timeout, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(TestUtil.implicit_wait, TimeUnit.SECONDS);
 		
-		driver.get("https://www.google.com");
+		driver.get(prop.getProperty("url"));
 		
 		// Take sreenshot(.getScreenshotAs method) and store as a file format
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
